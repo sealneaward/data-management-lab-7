@@ -2,24 +2,21 @@
 
 -- DROP TABLE players;
 
-CREATE TABLE players
-(
-  "PLAYER_ID" bigint NOT NULL,
-  "PLAYER_NAME" text,
-  "TEAM_ID" bigint,
-  "TEAM_ABBREVIATION" text,
-  "GP" bigint,
-  "W" bigint,
-  "L" bigint,
-  "MIN" double precision,
-  "STL" bigint,
-  "BLK" bigint,
-  "DREB" bigint,
-  "DEF_RIM_FGM" bigint,
-  "DEF_RIM_FGA" bigint,
-  "DEF_RIM_FG_PCT" double precision,
-  CONSTRAINT hustle_overall_pkey PRIMARY KEY ("PLAYER_ID")
-)
-WITH (
-  OIDS=FALSE
+
+CREATE TABLE `nba`.`players` (
+	        BLK int,
+          DEF_RIM_FGA float,
+          DEF_RIM_FGM int,
+          DEF_RIM_FG_PCT float,
+          DREB int,
+          GP int,
+          L int,
+          MIN int,
+          PLAYER_ID int,
+          PLAYER_NAME varchar(255),
+          STL int,
+          TEAM_ABBREVIATION varchar(50),
+          TEAM_ID int,
+          W int,
+	PRIMARY KEY(PLAYER_ID)
 );

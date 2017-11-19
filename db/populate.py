@@ -6,7 +6,7 @@ from urls import urls
 
 class Populate:
     def __init__(self):
-        self.engine = create_engine('postgresql://root:root@localhost:5432/nba')
+        self.engine = create_engine('mysql+mysqldb://root:root@localhost/nba')
 
     def populate(self):
         # gets players and writes to sql, replacing if table exists

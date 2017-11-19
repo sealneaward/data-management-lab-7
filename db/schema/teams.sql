@@ -2,11 +2,9 @@
 
 -- DROP TABLE teams;
 
-CREATE TABLE teams
-(
-  "TEAM_ID" bigint,
-  "TEAM_NAME" text
-)
-WITH (
-  OIDS=FALSE
+
+CREATE TABLE `nba`.`teams` (
+	TEAM_ID int,
+	TEAM_NAME varchar(255),
+	PRIMARY KEY(TEAM_ID)
 );
