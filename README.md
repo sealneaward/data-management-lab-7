@@ -15,7 +15,7 @@ Repository to hold setup instructions for lab 7.
 - Install git [if not already installed](https://git-scm.com/download/win)
 - Clone project *run in cmd as admin*
 ```
-git clone https://github.com/sealneaward/template-py
+git clone https://github.com/sealneaward/data-management-lab-7
 ```
 - Install [Python 2.7](https://www.python.org/downloads/release/python-2712/)
 - Add Python and Python scripts to path variable, **no spaces**
