@@ -5,7 +5,7 @@ Repository to hold setup instructions for lab 7.
 - [Windows](#windows-setup)
 - [Linux](#linux-setup)
 - [MySQL Database Setup](#mysql-database-setup)
-- [MySQL Database Setup](#mysql-schema-setup)
+- [MySQL Schema Setup](#mysql-schema-setup)
 - [Pycharm Setup](#pycharm-ide-setup)
 - [Running Project](#run-project)
 - [Additional Styling](#styling)
