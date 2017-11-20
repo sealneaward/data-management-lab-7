@@ -60,8 +60,7 @@ def stats():
     return render_template("stats.html", name=stats[1], blocks=stats[9], drfgm=stats[11], drfga=stats[12], drfgpct=stats[13])
 
 # create simple api that takes in id and response with stats of said player
-# ex http://localhost:5000/api/201960
-# TODO add query parameters like http://localhost:5000/api?id=201960
+# ex player <id> = 201960
 @app.route('/api/<id>', methods=['GET','POST'])
 def api(id):
     player_id = id
@@ -70,4 +69,3 @@ def api(id):
 
 if __name__ == '__main__':
     app.run(debug=True, host='localhost')
-
