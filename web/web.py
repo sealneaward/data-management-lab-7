@@ -21,7 +21,7 @@ db = connection.Connection()
 def index():
     class SelectTeamForm(Form):
         teams = db.get_teams()
-        name = SelectField(coerce=int, choices=teams, default=1610612737L)
+        name = SelectField(coerce=int, choices=teams, default=1610612737)
 
     form = SelectTeamForm()
 

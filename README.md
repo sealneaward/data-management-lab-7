@@ -17,14 +17,14 @@ Repository to hold setup instructions for lab 7.
 ```
 git clone https://github.com/sealneaward/data-management-lab-7
 ```
-- Install [Python 2.7](https://www.python.org/downloads/release/python-2712/)
+- Install [Python 2.7 (Recommended)](https://www.python.org/downloads/release/python-2712/)
 - Add Python and Python scripts to path variable, **no spaces**
 
 ![path](img/path.PNG)
 
 - Install dependencies *run in cmd as admin in project folder*
 ```
-pip install -r requirements.txt
+pip install -r requirements-2.7.txt
 python setup.py build
 python setup.py install
 ```
@@ -40,7 +40,7 @@ sudo apt-get install git
 ```
 sudo apt install python-pip python-dev build-essential libpq-dev
 sudo apt-get install mysql-server mysql-workbench libmysqlclient-dev
-pip install -r requirements.txt
+pip install -r requirements-2.7.txt
 python setup.py build
 python setup.py install
 ```
@@ -95,17 +95,17 @@ python setup.py install
 **For Databse Population**
 ![Configuration Setup Web](img/populate-config.png)
 
-# Run Project
-- use configurations created in PyCharm for `web.py` and `populate.py`
-- to run, click the green arrow button besides the dropdown used for configuration
+### Run Project
+1. Run the `populate.py` script.
 
-![Run](img/run.png)
+2. Run the `web.py` script.
 
-- to debug, click on the green sun icon
-
-![Debug](img/debug.png)
 
 **Note:** You can run the web and populate scripts on the command line if you ran the package installation on db.
+
+### API
+While the web.py script is running and the web page is visible, investigate the web.py script to see if you can invoke the API to get a player's information through a JSON response. **Hint: ** *look at the api route and what an example player id would be.*
+
 
 # Styling
 - I used Materialize.css for this project
