@@ -25,9 +25,13 @@ git clone https://github.com/sealneaward/data-management-lab-7
 - Install dependencies *run in cmd as admin in project folder*
 ```
 pip install -r requirements-2.7.txt
+pip install wheel
+pip install MySQL_python-1.2.5-cp27-none-win_amd64.whl
+pip install mysqlclient-1.3.13-cp27-cp27m-win_amd64.whl
 python setup.py build
 python setup.py install
 ```
+
 - Install [MySQL Server](https://dev.mysql.com/downloads/mysql/)
 
 
@@ -52,6 +56,8 @@ python setup.py install
 - Select the default developer installation
 
 ![installation](img/mysql-install-default.PNG)
+
+![encryption](img/authentication-setup.PNG)
 
 - The installation should allow you the option to create a user. Enter in the following info.
 
