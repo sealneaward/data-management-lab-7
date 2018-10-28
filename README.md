@@ -9,7 +9,7 @@ Repository to hold setup instructions for lab 7.
 - [Pycharm Setup](#pycharm-ide-setup)
 - [Running Project](#run-project)
 - [Additional Styling](#styling)
-- [Tasks to Complete For Lab](#complete)
+- [Tasks to Complete For Lab](#api)
 
 # Windows Setup
 - Install git [if not already installed](https://git-scm.com/download/win)
@@ -103,9 +103,5 @@ python setup.py install
 
 **Note:** You can run the web and populate scripts on the command line if you ran the package installation on db.
 
-### API
-While the web.py script is running and the web page is visible, investigate the web.py script to see if you can invoke the API to get a player's information through a JSON response. **Hint: ** *look at the api route and what an example player id would be.*
-
-
-# Styling
-- I used Materialize.css for this project
+# API
+While the web.py script is running and the web page is visible, investigate the web.py script to see if you can invoke the API to get a player's information through a JSON response. **Hint:** *look at the api route and what an example player id would be.*
