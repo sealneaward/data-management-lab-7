@@ -85,6 +85,15 @@ python setup.py install
 
 ![table created](img/table-creation-players.PNG)
 
+### Additional MySQL Setup
+
+```py
+sqlalchemy.exc.OperationalError: (_mysql_exceptions.OperationalError) (2059, "Authentication plugin 'caching_sha2_password' cannot be loaded: The specified module could not be found.\r\n")
+```
+**Fix:** *Run the SQL query shown into MySQL.*
+```sql
+ALTER USER '[YOURUSERNAME]'@'localhost' IDENTIFIED WITH mysql_native_password BY '[YOURPASSWORD]';
+```
 
 # PyCharm IDE Setup
 - download and install [PyCharm](https://www.jetbrains.com/pycharm/)
